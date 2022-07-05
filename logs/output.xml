@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220705 15:49:44.943" rpa="false" schemaversion="3">
+<suite id="s1" name="HomePage" source="C:\Users\Vivianne\Documents\GitHub\Prova-Trustly\tests\HomePage.robot">
+<test id="s1-t1" name="Scenario 01 - Search Trustly word in Google" line="13">
+<kw name="Start Session" library="base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<arg>slowMo=00:00:02</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220705 15:49:46.253" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 2000.0, "tracesDir": "C:\\Users\\Vivianne\\Documents\\GitHub\\Prova-Trustly\\logs\\browser\\traces\\cdf0b085-e84e-44c6-b831-daebbd122fb5"}</msg>
+<msg timestamp="20220705 15:49:46.853" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":2000,"tracesDir":"C:\\Users\\Vivianne\\Documents\\GitHub\\Prova-Trustly\\logs\\browser\\traces\\cdf0b085-e84e-44c6-b831-daebbd122fb5"}</msg>
+<status status="PASS" starttime="20220705 15:49:46.252" endtime="20220705 15:49:46.853"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220705 15:49:50.310" level="INFO">Successfully initialized new page object and opened url: https://www.google.com.br</msg>
+<msg timestamp="20220705 15:49:50.310" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220705 15:49:46.853" endtime="20220705 15:49:50.310"/>
+</kw>
+<kw name="Start Video Recording">
+<msg timestamp="20220705 15:49:50.315" level="FAIL">No keyword with name 'Start Video Recording' found.</msg>
+<status status="FAIL" starttime="20220705 15:49:50.314" endtime="20220705 15:49:50.315"/>
+</kw>
+<status status="FAIL" starttime="20220705 15:49:46.252" endtime="20220705 15:49:50.316"/>
+</kw>
+<kw name="Finish Session" library="base" type="TEARDOWN">
+<kw name="Stop Video Recording">
+<msg timestamp="20220705 15:49:50.321" level="FAIL">No keyword with name 'Stop Video Recording' found.</msg>
+<status status="FAIL" starttime="20220705 15:49:50.321" endtime="20220705 15:49:50.322"/>
+</kw>
+<status status="FAIL" starttime="20220705 15:49:50.317" endtime="20220705 15:49:50.322">No keyword with name 'Stop Video Recording' found.</status>
+</kw>
+<tag>01</tag>
+<status status="FAIL" starttime="20220705 15:49:46.247" endtime="20220705 15:49:50.322">Setup failed:
+No keyword with name 'Start Video Recording' found.
+
+Also teardown failed:
+No keyword with name 'Stop Video Recording' found.</status>
+</test>
+<doc>This tests verify access to Home Page from Google search</doc>
+<status status="FAIL" starttime="20220705 15:49:44.945" endtime="20220705 15:49:50.413"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">01</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="HomePage">HomePage</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220705 15:49:45.180" level="ERROR">Error in file 'C:\Users\Vivianne\Documents\GitHub\Prova-Trustly\Resources\base.robot' on line 6: Importing library 'ScreenCapLibrary' failed: ModuleNotFoundError: No module named 'ScreenCapLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Vivianne\Documents\GitHub\Prova-Trustly
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Users\Vivianne\AppData\Roaming\Python\Python310\site-packages
+  C:\Python310\lib\site-packages</msg>
+</errors>
+</robot>

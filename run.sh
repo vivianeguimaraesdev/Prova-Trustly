@@ -1,0 +1,1 @@
+python -m robot -d ./logs tests/HomePage.robot
